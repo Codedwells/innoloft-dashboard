@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import inno_images from '../utils/images';
 import { useAppSelector } from '@/hooks/redux_hooks';
+import Link from 'next/link';
 
 export const Header = () => {
     const productDetails = useAppSelector((state) => state.productState);
@@ -14,7 +15,9 @@ export const Header = () => {
     return (
         <>
             <header className={`flex h-[3.35rem] items-center justify-between ${mainColor} px-4 text-white shadow md:px-4 lg:px-[15rem] `}>
-                <Image src={appConfig.logo} height={26.29} width={appConfig.id == 2 ? 50 : 140} alt={'Innoloft logo'} className={'text-white'} />
+                <Link href={'/'}>
+                    <Image src={appConfig.logo} height={26.29} width={appConfig.id == 2 ? 50 : 140} alt={'Innoloft logo'} className={'text-white'} />
+                </Link>
 
                 <div className={'hidden w-full md:flex md:items-center md:justify-center md:px-[2rem]'}>
                     <input

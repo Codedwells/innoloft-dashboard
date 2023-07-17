@@ -6,7 +6,6 @@ export default function Document() {
             <Head>
                 <meta name="description" content="Innoloft Frontend" />
                 <link rel="icon" href="https://config.innoloft.com/7648562/favicons/favicon.ico" />
-                <title>Innoloft Frontend</title>
             </Head>
             <body>
                 <Main />

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useContext, useEffect } from 'react';
 import { Header } from '../components/Header';
 import { setProduct } from '@/store/product.slice';
@@ -34,6 +35,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     }, []);
     return (
         <>
+            <Head>
+                <title>Innoloft Frontend</title>
+            </Head>
+            
             <Header />
 
             <div className={'mt-[1.25rem] px-4 md:flex md:space-x-[1.5rem] lg:px-[15rem]'}>
