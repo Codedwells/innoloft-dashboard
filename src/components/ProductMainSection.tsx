@@ -47,7 +47,7 @@ export const ProductMainSection = ({ className, type = 'view' }: InfoHeaderProps
         });
 
         // Update product state
-        dispatch(setProduct(data));
+        //dispatch(setProduct(data));
     };
 
     // Save name and description
